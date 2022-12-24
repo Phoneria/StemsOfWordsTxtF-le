@@ -18,7 +18,7 @@ tag_map['V'] = wn.VERB
 tag_map['R'] = wn.ADV
 
 
-def steam(text):
+def stem(text):
 
     tokens = word_tokenize(text)
     lemma_function = WordNetLemmatizer()
@@ -34,5 +34,5 @@ def steam(text):
     
     return my_list
 
-steam("Sample text will be here")
+stem("Sample text will be here")
 
